@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+        balancer:
+                build: ./balancer
+                links:
+                        - webserver
+                depends_on:
+                        - webserver
+                expose:
+                        - 80
+                ports:
+                        - '8080:80'
+                networks:
+                        - proxy
+                volumes:
+                        - /var/run/docker.sock:/var/run/docker.sock
+        webserver:
+                build: ./webserver
+                expose:
+                        - 80
+                networks:
+                        - proxy
+networks:
+        proxy:
