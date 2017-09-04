@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>test</title>
+<title>AutoScale</title>
 </head>
 <body>
 <p>Currently running on: 
