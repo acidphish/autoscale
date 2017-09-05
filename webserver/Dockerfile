@@ -29,7 +29,7 @@ EXPOSE 80
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Add the default website
-ADD html /var/www/html
+ADD html /var/www/autoscale
 
 # Start Apache in the foreground
 CMD /usr/sbin/apache2ctl -D FOREGROUND
