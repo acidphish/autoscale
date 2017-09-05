@@ -24,7 +24,7 @@
 				<div class="col-md-12">
 					<h1>AutoScale</h1>
 					<h2 class="subtitle">Testing deployment of docker scaling.</h2>
-					<div id="response"></div>
+					<div id="response"><h2 class="subtitle">Contacting server..</h2></div>
 				</div>
 			</div>
       
@@ -56,7 +56,7 @@
 		$.get( "server.php", function( data ) {
 			$( "#response" ).html( data );
 		});
-	}, 3 * 1000);
+	}, 2 * 1000);
   </script>
   
   <script src="contactform/contactform.js"></script>
