@@ -1,14 +1,7 @@
-<html>
-<head>
-<title>AutoScale</title>
-</head>
-<body>
-<p>Currently running on: 
+<h2 class="subtitle">Currently running on: 
 <?
 
 echo gethostname();
 
 ?>
-<p>
-</body>
-</html>
+</h2>
